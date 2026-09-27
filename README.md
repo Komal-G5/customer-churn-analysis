@@ -200,23 +200,43 @@ This provides a financial perspective on customer churn rather than treating chu
 
 ---
 
-## Visual Analysis
+## 📊 Visual Analysis
 
-The project includes visualizations covering:
+The analysis includes business-focused visualizations covering **churn trends, customer risk, revenue exposure, subscription behavior, satisfaction, and customer support patterns**.
 
-* Monthly Customer Churn Trend
-* Churn Rate by Plan Type
+### Churn & Retention
+
+| Analysis                        | Visualization                                        |
+| ------------------------------- | ---------------------------------------------------- |
+| Monthly Customer Churn Trend    | Time-series analysis of monthly churn                |
+| Churn Rate by Plan Type         | Comparison across Basic, Standard, and Premium plans |
+| Churn Rate by Contract Type     | Comparison of Monthly vs Annual contracts            |
+| Churn Rate by Subscription Type | Comparison across acquisition/subscription types     |
+
+### Customer Risk & Revenue
+
+| Analysis                               | Visualization                                        |
+| -------------------------------------- | ---------------------------------------------------- |
+| Churn Risk Distribution                | Distribution of Low, Medium, and High-risk customers |
+| Monthly Revenue Exposure by Churn Risk | Revenue associated with different risk segments      |
+| Monthly Charges by Plan & Churn Risk   | Relationship between plan charges and customer risk  |
+
+### Customer Experience
+
+| Analysis                               | Visualization                                              |
+| -------------------------------------- | ---------------------------------------------------------- |
+| Churn Rate by CSAT Group               | Churn patterns across satisfaction groups                  |
+| Churn Rate vs CSAT Score               | Relationship between satisfaction score and observed churn |
+| Complaint Distribution by Churn Status | Complaint patterns across churn status                     |
+
+### Additional Analysis
+
 * Churn Rate by State
-* Churn Rate by Contract Type
-* Churn Rate by Subscription Type
-* Customer Churn Risk Distribution
-* Monthly Revenue Exposure by Churn Risk
-* Complaint Distribution by Churn Status
-* Churn Rate by CSAT Group
+* Churn Rate by Gender
 * Correlation Heatmap
-* Monthly Charges by Plan and Churn Risk
 
-All visualizations are available in the `visuals/` directory.
+All visualizations are available in the [`visuals/`](./visuals/) directory.
+
 
 ---
 
