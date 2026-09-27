@@ -1,5 +1,16 @@
 # Customer Churn Analysis
 
+> **End-to-end customer churn analytics project** focused on identifying churn patterns, customer risk segments, retention trends, and revenue exposure using Python, SQL, SQLite, Pandas, Matplotlib, and Seaborn.
+
+### 📌 Project Snapshot
+
+| Metric                  |       Result |
+| ----------------------- | -----------: |
+| Customers Analyzed      |      **507** |
+| Overall Churn Rate      |   **30.77%** |
+| Monthly Revenue at Risk | **2,026.44** |
+| High-Risk Customers     |      **116** |
+
 ## Project Overview
 
 An end-to-end customer churn analysis project designed to identify customer segments with higher observed churn, understand factors associated with customer attrition, and quantify potential revenue exposure.
