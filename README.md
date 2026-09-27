@@ -240,17 +240,66 @@ All visualizations are available in the [`visuals/`](./visuals/) directory.
 
 ---
 
-## Key Business Insights
+## 📈 Executive Visuals
 
-* The overall observed customer churn rate is **30.77%** across 507 unique customers.
-* Monthly-contract customers have a substantially higher observed churn rate than annual-contract customers.
-* Basic-plan customers have the highest observed churn rate among the analyzed plans.
-* Paid subscribers show the highest observed churn rate among the analyzed subscription types.
-* Customer satisfaction shows a strong association with observed churn in this dataset.
-* **2,026.44** in monthly charges are associated with churned customers.
-* **116 customers** are classified as high churn risk, representing approximately **1,477.84** in monthly charges.
+### Monthly Churn Trend
 
-> **Note:** These are observed relationships within this dataset and should not automatically be interpreted as causal relationships.
+![Monthly Customer Churn Trend](./visuals/4.1%20Monthly_Customer_Churn_Trend_%28Time_Series_KPI%29.png)
+
+### Churn Rate by Contract Type
+
+![Churn Rate by Contract Type](./visuals/4.4%20Churn_Rate_by_Contract_Type.png)
+
+### Churn Risk Distribution
+
+![Customer Churn Risk Distribution](./visuals/4.7%20Customer_Churn_Risk_Distribution.png)
+
+### Monthly Revenue Exposure by Churn Risk
+
+![Monthly Revenue Exposure by Churn Risk](./visuals/4.8%20Monthly_Revenue_Exposure_by_Churn_Risk.png)
+
+---
+
+## 💡 Key Business Insights
+
+### 1. Contract Type & Churn
+
+Monthly-contract customers showed a higher observed churn rate (**39.77%**) compared with annual-contract customers (**20.99%**).
+
+**Business implication:** Short-term contracts may represent a higher-retention-risk segment and could be useful for targeted retention and contract-conversion analysis.
+
+### 2. Plan-Level Churn
+
+The Basic plan recorded the highest observed churn rate (**37.22%**), followed by Standard (**28.97%**) and Premium (**23.89%**).
+
+**Business implication:** Plan-level churn patterns can help identify segments that require deeper investigation into pricing, benefits, usage, or customer experience.
+
+### 3. Customer Risk & Revenue Exposure
+
+The dataset contains **116 high-risk customers**, associated with approximately **1,477.84 in monthly charges**.
+
+**Business implication:** Customer risk segmentation can be combined with revenue exposure to prioritize retention analysis based on both customer risk and financial impact.
+
+### 4. Churn & Revenue Impact
+
+The overall observed churn rate was **30.77%**, while monthly revenue associated with churned customers was approximately **2,026.44**.
+
+**Business implication:** Churn analysis should consider both customer volume and financial exposure rather than relying only on churn percentage.
+
+### 5. Customer Satisfaction
+
+Customers in the lower CSAT groups showed substantially higher observed churn than customers in the high-CSAT group.
+
+**Business implication:** Customer satisfaction can be monitored alongside churn metrics to identify potential customer-experience risk areas.
+
+### 6. CLTV & Churn
+
+Average CLTV among churned customers (**433.63**) was lower than the overall average CLTV (**794.82**).
+
+**Business implication:** CLTV and churn should be analyzed together to understand whether customer attrition is concentrated among lower-value or strategically important customer segments.
+
+> **Note:** These findings describe observed relationships in the dataset and should not be interpreted as proof of causation.
+
 
 ---
 
@@ -289,22 +338,42 @@ customer-churn-analysis/
 
 ---
 
-## How to Run the Project
+## ▶️ How to Run the Project
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/Komal-G5/customer-churn-analysis.git
 cd customer-churn-analysis
 ```
 
-### 2. Install dependencies
+### 2. Create a Virtual Environment
+
+```bash
+python -m venv .venv
+```
+
+Activate it:
+
+**macOS / Linux**
+
+```bash
+source .venv/bin/activate
+```
+
+**Windows**
+
+```bash
+.venv\Scripts\activate
+```
+
+### 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Launch Jupyter Notebook
+### 4. Launch Jupyter Notebook
 
 ```bash
 jupyter notebook
@@ -316,34 +385,77 @@ Open:
 notebooks/churn_analysis_.ipynb
 ```
 
-### 4. Run the notebook
+### 5. Run the Analysis
 
-Run the notebook from top to bottom to reproduce the analysis.
+Run the notebook cells sequentially.
 
-The project uses relative paths so that the notebook can be executed from the project structure without relying on machine-specific absolute file paths.
+The notebook performs:
+
+**Data Extraction → Data Cleaning → Data Integration → Feature Engineering → Exploratory Analysis → KPI Analysis → Visualization → Business Insights**
+
+The project uses relative project paths, so the analysis does not depend on the original local computer location.
+
+### 6. Project Outputs
+
+Generated analysis outputs and visualizations are available in:
+
+```text
+visuals/
+```
+
+The repository also includes the processed analysis notebook and supporting datasets required for the project.
 
 ---
 
-## Skills Demonstrated
+## 🧠 Skills Demonstrated
 
-This project demonstrates practical experience with:
+### Data & SQL
 
-* Python for data analysis
-* SQL-based data extraction and transformation
-* SQLite database handling
-* Pandas data manipulation
+* SQL-based data extraction and querying
+* Multi-table data integration using relational keys
+* SQLite database analysis
+* Data validation and consistency checks
+
+### Python & Data Analysis
+
+* Pandas-based data manipulation and transformation
+* NumPy-based numerical analysis
 * Data cleaning and preprocessing
-* Multi-table joins
-* Duplicate resolution
+* Exploratory Data Analysis (EDA)
 * Feature engineering
-* Exploratory Data Analysis
-* KPI development
+* Date/time-based analysis
+
+### Statistical & Analytical Techniques
+
+* KPI calculation and metric design
+* Churn and retention analysis
 * Customer segmentation
-* Revenue analysis
-* Churn-risk analysis
-* Data visualization
-* Business insight generation
-* Git and GitHub workflow
+* Correlation analysis
+* Distribution analysis
+* Trend analysis
+* Risk segmentation
+* Revenue exposure analysis
+
+### Data Visualization
+
+* Matplotlib
+* Seaborn
+* Time-series visualization
+* Categorical comparison
+* Risk and revenue visualization
+* Correlation heatmaps
+
+### Business Analytics
+
+* Translating business questions into analytical metrics
+* Identifying high-risk customer segments
+* Connecting customer churn with revenue exposure
+* Comparing customer, subscription, contract, and satisfaction patterns
+* Converting analytical findings into business-focused insights
+
+### Analytics Workflow
+
+**Raw Data → SQL Extraction → Data Cleaning → Data Integration → Feature Engineering → EDA → KPI Analysis → Visualization → Business Insights**
 
 ---
 
